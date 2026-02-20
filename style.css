@@ -1,3 +1,4 @@
+/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -29,17 +30,6 @@ body {
     font-size: 2.5rem;
     color: #38bdf8;
     margin-bottom: 10px;
-
-    /* efecto neón sin tocar HTML */
-    text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #38bdf8,
-        0 0 30px #38bdf8,
-        0 0 40px #38bdf8,
-        0 0 55px #38bdf8,
-        0 0 75px #38bdf8;
-    animation: neon-glow 2s ease-in-out infinite alternate;
 }
 
 .hero-text h2 {
@@ -58,79 +48,56 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* NEON ANIMATION */
-
+/* NEON SUAVE MORADO */
 .projects h2,
 .hero-text h1 {
-    animation: neon-glow 2s ease-in-out infinite alternate;
+    animation: neon-glow-slow 4s ease-in-out infinite alternate;
 }
 
-@keyframes neon-glow {
+@keyframes neon-glow-slow {
     0% {
         text-shadow:
             0 0 5px #fff,
             0 0 10px #fff,
-            0 0 20px #38bdf8,
-            0 0 30px #38bdf8,
-            0 0 40px #38bdf8,
-            0 0 55px #38bdf8,
-            0 0 75px #38bdf8;
-        color: #38bdf8;
+            0 0 20px #9b5de5,
+            0 0 30px #9b5de5,
+            0 0 40px #9b5de5,
+            0 0 55px #9b5de5,
+            0 0 75px #9b5de5;
+        color: #9b5de5;
     }
-    20% {
+    33% {
         text-shadow:
             0 0 5px #fff,
             0 0 10px #fff,
-            0 0 20px #ff00de,
-            0 0 30px #ff00de,
-            0 0 40px #ff00de,
-            0 0 55px #ff00de,
-            0 0 75px #ff00de;
-        color: #ff00de;
+            0 0 20px #f15bb5,
+            0 0 30px #f15bb5,
+            0 0 40px #f15bb5,
+            0 0 55px #f15bb5,
+            0 0 75px #f15bb5;
+        color: #f15bb5;
     }
-    40% {
+    66% {
         text-shadow:
             0 0 5px #fff,
             0 0 10px #fff,
-            0 0 20px #00ffff,
-            0 0 30px #00ffff,
-            0 0 40px #00ffff,
-            0 0 55px #00ffff,
-            0 0 75px #00ffff;
-        color: #00ffff;
-    }
-    60% {
-        text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
-            0 0 20px #00ff00,
-            0 0 30px #00ff00,
-            0 0 40px #00ff00,
-            0 0 55px #00ff00,
-            0 0 75px #00ff00;
-        color: #00ff00;
-    }
-    80% {
-        text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
-            0 0 20px #ffea00,
-            0 0 30px #ffea00,
-            0 0 40px #ffea00,
-            0 0 55px #ffea00,
-            0 0 75px #ffea00;
-        color: #ffea00;
+            0 0 20px #fee440,
+            0 0 30px #fee440,
+            0 0 40px #fee440,
+            0 0 55px #fee440,
+            0 0 75px #fee440;
+        color: #fee440;
     }
     100% {
         text-shadow:
             0 0 5px #fff,
             0 0 10px #fff,
-            0 0 20px #38bdf8,
-            0 0 30px #38bdf8,
-            0 0 40px #38bdf8,
-            0 0 55px #38bdf8,
-            0 0 75px #38bdf8;
-        color: #38bdf8;
+            0 0 20px #9b5de5,
+            0 0 30px #9b5de5,
+            0 0 40px #9b5de5,
+            0 0 55px #9b5de5,
+            0 0 75px #9b5de5;
+        color: #9b5de5;
     }
 }
 
