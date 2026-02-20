@@ -47,6 +47,89 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+/* NEON EFFECT */
+
+.neon {
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #38bdf8,
+        0 0 30px #38bdf8,
+        0 0 40px #38bdf8,
+        0 0 55px #38bdf8,
+        0 0 75px #38bdf8;
+    animation: neon-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+    0% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #38bdf8,
+            0 0 30px #38bdf8,
+            0 0 40px #38bdf8,
+            0 0 55px #38bdf8,
+            0 0 75px #38bdf8;
+        color: #38bdf8;
+    }
+    20% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #ff00de,
+            0 0 30px #ff00de,
+            0 0 40px #ff00de,
+            0 0 55px #ff00de,
+            0 0 75px #ff00de;
+        color: #ff00de;
+    }
+    40% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #00ffff,
+            0 0 30px #00ffff,
+            0 0 40px #00ffff,
+            0 0 55px #00ffff,
+            0 0 75px #00ffff;
+        color: #00ffff;
+    }
+    60% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #00ff00,
+            0 0 30px #00ff00,
+            0 0 40px #00ff00,
+            0 0 55px #00ff00,
+            0 0 75px #00ff00;
+        color: #00ff00;
+    }
+    80% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #ffea00,
+            0 0 30px #ffea00,
+            0 0 40px #ffea00,
+            0 0 55px #ffea00,
+            0 0 75px #ffea00;
+        color: #ffea00;
+    }
+    100% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #38bdf8,
+            0 0 30px #38bdf8,
+            0 0 40px #38bdf8,
+            0 0 55px #38bdf8,
+            0 0 75px #38bdf8;
+        color: #38bdf8;
+    }
+}
+
 /* PROJECTS */
 
 .projects {
