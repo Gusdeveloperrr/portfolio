@@ -28,8 +28,18 @@ body {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    color: #9b5de5; /* color inicial morado */
+    color: #5ed4f4; /* celeste agua */
     margin-bottom: 10px;
+    /* NEON RESPIRANTE */
+    text-shadow:
+        0 0 5px #5ed4f4,
+        0 0 10px #5ed4f4,
+        0 0 20px #5ed4f4,
+        0 0 30px #5ed4f4,
+        0 0 40px #5ed4f4,
+        0 0 55px #5ed4f4,
+        0 0 75px #5ed4f4;
+    animation: neon-breath 4.5s ease-in-out infinite alternate;
 }
 
 .hero-text h2 {
@@ -48,58 +58,64 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* NEON SUPER LENTO - MORADO A CELESTE */
-.projects h2,
-.hero-text h1 {
-    animation: neon-breath 20s ease-in-out infinite alternate;
-}
-
-@keyframes neon-breath {
-    0% {
-        color: #9b5de5; /* morado */
-        text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
-            0 0 20px #9b5de5,
-            0 0 30px #9b5de5,
-            0 0 40px #9b5de5,
-            0 0 55px #9b5de5,
-            0 0 75px #9b5de5;
-    }
-    50% {
-        color: #5ed4f4; /* celeste agua */
-        text-shadow:
-            0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 30px #5ed4f4,
-            0 0 50px #5ed4f4,
-            0 0 70px #5ed4f4,
-            0 0 90px #5ed4f4,
-            0 0 120px #5ed4f4;
-    }
-    100% {
-        color: #9b5de5; /* vuelve a morado */
-        text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
-            0 0 20px #9b5de5,
-            0 0 30px #9b5de5,
-            0 0 40px #9b5de5,
-            0 0 55px #9b5de5,
-            0 0 75px #9b5de5;
-    }
-}
-
-/* PROJECTS */
-
-.projects {
-    padding: 60px 10%;
-}
+/* NEON RESPIRANTE EN PROYECTOS */
 
 .projects h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
+    color: #5ed4f4; /* celeste agua */
+    text-shadow:
+        0 0 5px #5ed4f4,
+        0 0 10px #5ed4f4,
+        0 0 20px #5ed4f4,
+        0 0 30px #5ed4f4,
+        0 0 40px #5ed4f4,
+        0 0 55px #5ed4f4,
+        0 0 75px #5ed4f4;
+    animation: neon-breath 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-breath {
+    0% {
+        color: #5ed4f4;
+        text-shadow:
+            0 0 5px #5ed4f4,
+            0 0 10px #5ed4f4,
+            0 0 20px #5ed4f4,
+            0 0 30px #5ed4f4,
+            0 0 40px #5ed4f4,
+            0 0 55px #5ed4f4,
+            0 0 75px #5ed4f4;
+    }
+    50% {
+        color: #5ed4f4;
+        text-shadow:
+            0 0 2px #5ed4f4,
+            0 0 4px #5ed4f4,
+            0 0 6px #5ed4f4,
+            0 0 8px #5ed4f4,
+            0 0 10px #5ed4f4,
+            0 0 12px #5ed4f4,
+            0 0 15px #5ed4f4;
+    }
+    100% {
+        color: #5ed4f4;
+        text-shadow:
+            0 0 5px #5ed4f4,
+            0 0 10px #5ed4f4,
+            0 0 20px #5ed4f4,
+            0 0 30px #5ed4f4,
+            0 0 40px #5ed4f4,
+            0 0 55px #5ed4f4,
+            0 0 75px #5ed4f4;
+    }
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+    padding: 60px 10%;
 }
 
 .project-card {
